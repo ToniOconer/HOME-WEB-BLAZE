@@ -1,0 +1,30 @@
+/* Tema Umum */ body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #000; color: #fff; text-align: center; }
+
+.logo { width: 150px; margin: 20px auto; }
+
+h1 { font-size: 2.5em; color: #ff4500; margin-bottom: 20px; }
+
+.buttons { display: flex; flex-direction: column; gap: 15px; align-items: center; margin: 30px 0; }
+
+.btn { background-color: #1a1a1a; color: #fff; padding: 12px 25px; border: 2px solid #ff4500; border-radius: 10px; text-decoration: none; font-size: 1.1em; transition: all 0.3s ease; }
+
+.btn:hover { background-color: #ff4500; color: #000; }
+
+footer { margin: 40px auto; padding: 20px; border-top: 1px solid #ff4500; max-width: 800px; }
+
+.description { font-size: 1em; margin-bottom: 10px; color: #ccc; }
+
+.owner { font-size: 0.9em; color: #777; }
+
+/* Splash / Animasi Pembuka */ #splash { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+
+.fire-animation { width: 200px; height: 200px; background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(139,0,0,0.8) 70%, transparent 100%); border-radius: 50%; animation: flame 1s infinite ease-in-out; box-shadow: 0 0 50px 20px rgba(255, 69, 0, 0.7); }
+
+#splash-logo { width: 180px; margin-top: 20px; opacity: 0; animation: fadeInLogo 3s ease-in 7s forwards; }
+
+@keyframes flame { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.2); opacity: 0.8; } 100% { transform: scale(1); opacity: 1; } }
+
+@keyframes fadeInLogo { to { opacity: 1; } }
+
+/* Sembunyikan konten utama di awal */ .hidden { display: none; }
+

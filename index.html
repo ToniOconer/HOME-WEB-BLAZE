@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLAZE STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+    <!-- Animasi Api Pembuka -->
+    <div id="splash">
+        <div class="fire-animation"></div>
+        <img src="logo.jpg" alt="Logo Blaze Store" id="splash-logo">
+    </div>
+
+    <!-- Audio -->
+    <audio autoplay loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <!-- Konten Utama -->
+    <div id="main-content" class="hidden">
+        <header>
+            <img src="logo.jpg" alt="Logo BLAZE STORE" class="logo">
+            <h1>BLAZE STORE</h1>
+        </header>
+
+        <nav class="buttons">
+            <a href="https://produkblazehosting.vercel.app/" class="btn">Produk</a>
+            <a href="https://whatsapp.com/channel/0029VbAlbep8qIzwplzBWt1R" class="btn">Testimoni</a>
+            <a href="https://wa.me/6283170479709" class="btn">Kontak WA</a>
+            <a href="https://metodepembayaranblazehost.vercel.app/" class="btn">Metode Pembayaran</a>
+        </nav>
+
+        <footer>
+            <p class="description">
+                Asli No Rip. Jika Ragu Jangan PM dan juga jangan PHP. Boleh nego asal berotak, boleh ngutang asal lunas. Jika hutang gak dibayar, terima konsekuensinya.
+            </p>
+            <p class="owner">Owner: BlazeHosting | WA: 6283170479709</p>
+        </footer>
+    </div>
+
+    <script>
+        // Tampilkan konten utama setelah 10 detik
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('splash').style.display = 'none';
+                document.getElementById('main-content').classList.remove('hidden');
+            }, 10000);
+        });
+    </script>
+</body>
+</html>
